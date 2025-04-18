@@ -1,0 +1,19 @@
+/* Pagina de matriculas */
+
+.matriculas{
+    width: 80%;
+    margin: 30px auto;
+    
+}
+.nivel-matriculas{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    text-align:center;
+}
+.tarjeta-matriculas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}

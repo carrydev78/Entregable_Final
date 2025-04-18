@@ -1,0 +1,12 @@
+/* Contacto */
+@mixin formulario($padding,$botoncolortexto,$botoncolorfondo){
+    background-color:$botoncolorfondo;
+    padding: $padding;
+    color: $botoncolortexto;
+}
+
+
+.form-contacto{
+    @include formulario(30px,gray ,orange );
+    border-radius: 10px;
+}

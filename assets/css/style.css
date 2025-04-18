@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* Importar Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*  Declaracion de variables  */
+/*  Uso de Extend  */
+.enlace, .texto-boton {
+  color: rgb(255, 255, 255);
+  font-family: verdana;
+  font-size: 0.8em;
+}
+
+/* Generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.propuesta {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.titulo {
+  font-family: "Roboto";
+  font-size: 1em;
+  font-weight: 700;
+  color: rgb(244, 140, 3);
+  padding: 10px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 1.2em;
+  color: rgb(164, 50, 50);
+}
+
+.parrafo {
+  font-family: "Roboto";
+  font-size: 0.8em;
+  padding: 0 30px;
+  padding-bottom: 30px;
+}
+
+/* Barra de Navegación */
+.navbar-brand {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(244, 140, 3);
+  font-size: 1.6em;
+}
+
+.navbar-brand:hover {
+  color: rgb(244, 140, 3);
+}
+
+.nav-link {
+  margin: 0 5px;
+  font-size: 1em;
+}
+
+.nav-link:hover {
+  padding: 5px 5px;
+  background-color: rgb(121, 118, 118);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+/* Noticias */
+.noticias {
+  background-image: radial-gradient(circle, orange, white);
+  padding: 20px;
+}
+
+.lista-noticias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.texto-boton {
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Universidades */
+.universidades {
+  padding: 20px;
+}
+
+.lista-uni {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.lista-uni div {
+  border: 1px solid rgb(171, 171, 173);
+}
+
+/* Pie de página */
+.pie-pagina {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin: 0;
+}
+
+/* Pagina de Nosotros */
+.nosotros {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Pagina de Niveles */
+.niveles {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.nivel-academico {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tarjeta-niveles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Pagina de matriculas */
+.matriculas {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.nivel-matriculas {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tarjeta-matriculas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Contacto */
+.form-contacto {
+  background-color: orange;
+  padding: 30px;
+  color: gray;
+  border-radius: 10px;
+}
+
+/*  CONFIGURACION PARA DESKTOP */
+@media (min-width: 720px) {
+  .navbar-brand {
+    font-size: 1.8em;
+  }
+  .titulo {
+    font-size: 1.6em;
+  }
+  .parrafo {
+    font-size: 1em;
+  }
+  .subtitulo {
+    font-size: 1.6;
+    font-weight: 700;
+  }
+  .lista-noticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .tarjeta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .tarjeta-niveles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .tarjeta-matriculas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .form-contacto {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

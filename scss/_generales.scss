@@ -1,0 +1,47 @@
+
+/*  Declaracion de variables  */
+$colortitulo:rgb(244, 140, 3);
+$colorsubtitulo: rgb(164, 50, 50);
+$tipofuente:"Roboto";
+$colorfondomenu:rgb(121, 118, 118);
+$colortextomenu:rgb(255, 255, 255);
+
+/*  Uso de Extend  */
+.enlace{
+    color:rgb(255, 255, 255);
+    font-family: verdana;
+    font-size: 0.8em;
+ }
+
+ /* Generales */
+ 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.propuesta{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.titulo{
+    font-family: $tipofuente;
+    font-size: 1em;
+    font-weight: 700;
+    color: $colortitulo;
+    padding: 10px; 
+    text-align: center;
+}
+.subtitulo{
+    font-size: 1.2em;
+    color:$colorsubtitulo;
+}
+.parrafo{
+    font-family: $tipofuente;
+    font-size: 0.8em;
+    padding: 0 30px; 
+    padding-bottom: 30px;
+}

@@ -1,0 +1,61 @@
+/* Barra de Navegación */
+
+@mixin borde($radius){
+   border-radius:$radius;
+}
+
+.navbar-brand{
+    font-family: $tipofuente;
+    font-weight: 900;
+    font-style: normal;
+    color: $colortitulo;
+    font-size: 1.6em;
+   }
+   .navbar-brand:hover{color: $colortitulo;}
+   .nav-link{ 
+      margin: 0 5px;
+      font-size: 1em;
+  }
+   .nav-link:hover{
+      padding: 5px 5px;
+      background-color: $colorfondomenu;
+      color: $colortextomenu;
+      @include borde(5px);
+   }
+
+   /* Noticias */
+.noticias{
+   background-image: radial-gradient(circle,orange,white);
+   padding: 20px;
+}
+.lista-noticias{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+.texto-boton{
+   @extend .enlace;
+   font-style: italic;
+   font-weight: 700;
+}
+
+/* Universidades */
+
+.universidades{
+   padding: 20px;
+}
+.lista-uni{
+   width: 90%;
+   margin: 20px auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   gap: 20px;
+}
+.lista-uni div{
+   border: 1px solid rgb(171, 171, 173);
+   
+}
