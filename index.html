@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School</title>
+    <meta name="description" content="Colegio Pre-Universitario para alumnos que desean postular a la universidad de forma directa.">
+    <meta name="keywords" content="Escuela, Colegio, School, Centro Educactivo, Educación, Pre-Universitario, Matriculas, Postular, Universidad, Alumnos">
+    <title>CLOUDEV - Colegio</title>
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Bootstrap -->
@@ -13,106 +15,136 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html">CLOUDEV</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                  <a class="nav-link" href="./index.html">Inicio</a>
-                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                  <a class="nav-link" href="./pages/niveles.html">Niveles</a>
-                  <a class="nav-link" href="./pages/matriculas.html">Matriculas</a>
-                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col px-0">
+              <nav class="navbar navbar-expand-md bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html">CLOUDEV</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                      <a class="nav-link" href="./index.html">Inicio</a>
+                      <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                      <a class="nav-link" href="./pages/niveles.html">Niveles</a>
+                      <a class="nav-link" href="./pages/matriculas.html">Matriculas</a>
+                      <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </nav>
             </div>
-          </nav>
+          </div>
+        </div>
     </header>
     <main>
         <!-- Carrusel de imagenes -->
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col px-0">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/carrusel/portada-inicio.png" class="d-block w-100" alt="portada-inicio">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/carrusel/portada-matriculas.png" class="d-block w-100" alt="portada-matriculas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/carrusel/portada-contacto.jpeg" class="d-block w-100" alt="portada-contacto">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/carrusel/portada-inicio.png" class="d-block w-100" alt="portada-inicio">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/carrusel/portada-matriculas.png" class="d-block w-100" alt="portada-matriculas">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/carrusel/portada-contacto.jpeg" class="d-block w-100" alt="portada-contacto">
-              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+        </div>
 
         <!-- Propuesta academica -->
-        <section class="propuesta">
-            <h2 class="titulo animate__animated animate__rubberBand">PROPUESTA EDUCATIVA</h2>
-            <p class="parrafo">Somos una organización educativa que forma líderes con un alto nivel académico y una sólida formación en valores que les permita afrontar con éxito los retos de su vida personal y profesional.</p>
-        </section>
-
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <section class="propuesta">
+                <h1 class="titulo animate__animated animate__rubberBand">PROPUESTA EDUCATIVA</h1>
+                <p class="parrafo">Somos una organización educativa que forma líderes con un alto nivel académico y una sólida formación en valores que les permita afrontar con éxito los retos de su vida personal y profesional.</p>
+              </section>
+            </div>
+          </div>
+        </div>
+        
         <!-- Noticias -->
-        <section class="noticias">
-            <div>
-                <h2 class="titulo  animate__animated animate__rubberBand">NOTICIAS</h2>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col px-0">
+              <section class="noticias">
+                <div>
+                    <h1 class="titulo  animate__animated animate__rubberBand">NOTICIAS</h1>
+                </div>
+                <div class="lista-noticias">
+                    <article class="card" style="width: 18rem;">
+                        <img src="./assets/img/noticias/noticia-img1.jpg" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body p-0 my-3">
+                          <h5 class=" subtitulo card-title px-3">Universidad ESAN</h5>
+                          <p class="card-text parrafo px-3">En CLOUDEV estamos comprometidos con brindar una educación de calidad. Por esto, nos complace anunciar un convenio con la UNIVERSIDAD ESAN.</p>
+                          <a href="#" class="btn btn-secondary d-block mx-3"><span class="texto-boton">Leer más...</span></a>
+                        </div>
+                      </article>
+                    <article class="card" style="width: 18rem;">
+                        <img src="./assets/img/noticias/noticia-img2.png" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body p-0 my-3">
+                          <h5 class=" subtitulo card-title px-3">Matriculas 2025</h5>
+                          <p class="card-text parrafo px-3">Porque sabemos que quieres lo mejor para tus hijos, ayúdalos a potenciar sus talentos a través de nuestra propuesta educativa CLOUDEV.</p>
+                          <a href="#" class="btn btn-secondary d-block mx-3"><span class="texto-boton">Leer más...</span></a>
+                        </div>
+                      </article>
+                    <article class="card" style="width: 18rem;">
+                        <img src="./assets/img/noticias/noticia-img3.png" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body p-0 my-3">
+                          <h5 class=" subtitulo card-title px-3">Verano 2025</h5>
+                          <p class="card-text parrafo px-3">En este verano tenemos lo mejor para tus hijos en lo acedémico, ayúdalos a potenciar sus talentos a través de nuestra propuesta educativa CLOUDEV.</p>
+                          <a href="#" class="btn btn-secondary d-block mx-3"><span class="texto-boton">Leer más...</span></a>
+                        </div>
+                      </article>
+                </div>
+              </section>
             </div>
-            <div class="lista-noticias">
-                <article class="card" style="width: 18rem;">
-                    <img src="./assets/img/noticias/noticia-img1.jpg" class="card-img-top" alt="Noticia 1">
-                    <div class="card-body p-0 my-3">
-                      <h5 class=" subtitulo card-title px-3">Universidad ESAN</h5>
-                      <p class="card-text parrafo px-3">En CLOUDEV estamos comprometidos con brindar una educación de calidad. Por esto, nos complace anunciar un convenio con la UNIVERSIDAD ESAN.</p>
-                      <a href="#" class="btn btn-secondary d-block mx-3"><span class="texto-boton">Leer más...</span></a>
-                    </div>
-                  </article>
-                <article class="card" style="width: 18rem;">
-                    <img src="./assets/img/noticias/noticia-img2.png" class="card-img-top" alt="Noticia 1">
-                    <div class="card-body p-0 my-3">
-                      <h5 class=" subtitulo card-title px-3">Matriculas 2025</h5>
-                      <p class="card-text parrafo px-3">Porque sabemos que quieres lo mejor para tus hijos, ayúdalos a potenciar sus talentos a través de nuestra propuesta educativa CLOUDEV.</p>
-                      <a href="#" class="btn btn-secondary d-block mx-3"><span class="texto-boton">Leer más...</span></a>
-                    </div>
-                  </article>
-                <article class="card" style="width: 18rem;">
-                    <img src="./assets/img/noticias/noticia-img3.png" class="card-img-top" alt="Noticia 1">
-                    <div class="card-body p-0 my-3">
-                      <h5 class=" subtitulo card-title px-3">Verano 2025</h5>
-                      <p class="card-text parrafo px-3">En este verano tenemos lo mejor para tus hijos en lo acedémico, ayúdalos a potenciar sus talentos a través de nuestra propuesta educativa CLOUDEV.</p>
-                      <a href="#" class="btn btn-secondary d-block mx-3"><span class="texto-boton">Leer más...</span></a>
-                    </div>
-                  </article>
-            </div>
-        </section>
+          </div>
+        </div>
 
-        <!--  -->
-        <section class="universidades">
-            <div>
-                <h2 class="titulo  animate__animated animate__rubberBand">UNIVERSIDADES</h2>
+        <!-- Universidades -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mx-auto">
+              <section class="universidades">
+                <div>
+                    <h1 class="titulo  animate__animated animate__rubberBand">UNIVERSIDADES</h1>
+                </div>
+                <div class="lista-uni">
+                    <div><img src="./assets/img/uni/esan.jpg" alt="esan" width="150px"></div>
+                    <div><img src="./assets/img/uni/cayetano.png" alt="cayetano" width="150px"></div>
+                    <div><img src="./assets/img/uni/pacifico.jpg" alt="pacifico" width="150px"></div>
+                    <div><img src="./assets/img/uni/pucp.png" alt="pucp" width="150px"></div>
+                    <div><img src="./assets/img/uni/upc.png" alt="upc" width="150px"></div>
+                    <div><img src="./assets/img/uni/san-martin.svg" alt="san-martin" width="150px"></div>
+                </div>
+            </section>
             </div>
-            <div class="lista-uni">
-                <div><img src="./assets/img/uni/esan.jpg" alt="esan" width="150px"></div>
-                <div><img src="./assets/img/uni/cayetano.png" alt="cayetano" width="150px"></div>
-                <div><img src="./assets/img/uni/pacifico.jpg" alt="pacifico" width="150px"></div>
-                <div><img src="./assets/img/uni/pucp.png" alt="pucp" width="150px"></div>
-                <div><img src="./assets/img/uni/upc.png" alt="upc" width="150px"></div>
-                <div><img src="./assets/img/uni/san-martin.svg" alt="san-martin" width="150px"></div>
-            </div>
-        </section>
+          </div>
+        </div>
     </main>
     <footer class="pie-pagina">
         <p>Copyright © 2025 Colegio CLOUDEV | Todos los derechos reservados.</p>

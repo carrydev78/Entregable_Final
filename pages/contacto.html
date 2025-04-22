@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School - contacto</title>
+    <meta name="description" content="Contáctanos para cualquier consulta o sugerencia. En nuestra página de contacto encontrarás los medios para comunicarte con nosotros, ya sea por correo electrónico o teléfono.">
+    <meta name="keywords" content="contacto, formulario de contacto, infomración de contacto, soporte técnico, correo, teléfono.">
+    <title>CLOUDEV - Contacto</title>
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Bootstrap -->
@@ -13,51 +15,65 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">CLOUDEV</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                  <a class="nav-link" href="./niveles.html">Niveles</a>
-                  <a class="nav-link" href="./matriculas.html">Matriculas</a>
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 px-0">
+              <nav class="navbar navbar-expand-md bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">CLOUDEV</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                      <a class="nav-link" href="../index.html">Inicio</a>
+                      <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                      <a class="nav-link" href="./niveles.html">Niveles</a>
+                      <a class="nav-link" href="./matriculas.html">Matriculas</a>
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+            </nav>
             </div>
-          </nav>
+          </div>
+        </div>
     </header>
     <main>
-      <section>
-        <img src="../assets/img/portadas/portada-contacto.jpeg" alt="portada Nosotros" width="100%">
-      </section>
-
-      <section class="niveles">
-        <div class="nivel-academico">
-          <h2 class="titulo  animate__animated animate__rubberBand">CONTACTANOS</h2>
-          <p class="parrafo">Si necesitas mayor información sobre nuetros niveles academicos, no dudes en comunicarte con nosotros. nuestro horario de atencion es de 08:00am hasta las 5:00pm de lunes a sabado.</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col px-0">
+            <img src="../assets/img/portadas/portada-contacto.jpeg" alt="portada Nosotros" width="100%">
+          </div>
+        </div>
       </div>
 
-      <!-- formulario de contacto -->
-      <div class="col-md-12 form-contacto">
-        <form>
-          <div class="mb-3">
-            <label for="nombres" class="form-label">Nombres:</label>
-            <input type="text" class="form-control" id="nombres">
+      <div class="container niveles">
+        <div class="row nivel-academico">
+          <div class="col">
+            <h1 class="titulo  animate__animated animate__rubberBand">CONTACTANOS</h1>
+            <p class="parrafo">Si necesitas mayor información sobre nuetros niveles academicos, no dudes en comunicarte con nosotros. Un soporte técnico te ayudará en el proceso de admisión. <strong>Télefono:</strong> (01) 425-25632 / 986652365</p>
+            <p class="parrafo"><strong>Horario de atención:</strong>  Lunes a Sábado de 08:00am a 5:00pm</p>
           </div>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <a href="#" class="btn btn-secondary d-block mx-3"><span class="texto-boton">Enviar Mensaje</span></a>
-        </form>
-      </div>
+        </div>
 
-      </section>
+        <!-- formulario de contacto -->
+        <div class="row">
+          <div class="col-md-12 form-contacto">
+            <form>
+              <div class="mb-3">
+                <label for="nombres" class="form-label">Nombres:</label>
+                <input type="text" class="form-control" id="nombres">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <a href="#" class="btn btn-secondary d-block mx-3"><span class="texto-boton">Enviar Mensaje</span></a>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="pie-pagina">
       <p>Copyright © 2025 Colegio CLOUDEV | Todos los derechos reservados.</p>
