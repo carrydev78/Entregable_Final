@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Excelencia | Educación Integral y de Calidad</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a', // Azul institucional
+                        secondary: '#f59e0b', // Acento dorado/naranja
+                        accent: '#eff6ff',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- BARRA SUPERIOR (CONTACTO RÁPIDO) -->
+    <div class="bg-primary text-white text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-phone mr-2 text-secondary"></i> +51 (1) 234-5678</span>
+                <span><i class="fa-solid fa-envelope mr-2 text-secondary"></i> admision@colegioexcelencia.edu.pe</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="hidden md:inline"><i class="fa-solid fa-location-dot mr-2 text-secondary"></i> Av. Las Palmeras 123, Lima</span>
+                <div class="flex space-x-3">
+                    <a href="#" class="hover:text-secondary transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-secondary transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-secondary transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVEGACIÓN (NAVBAR) -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="bg-primary text-white p-2.5 rounded-xl font-bold text-xl flex items-center justify-center">
+                    <i class="fa-solid fa-graduation-cap text-secondary"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold text-primary tracking-tight">EXCELENCIA</span>
+                    <span class="block text-xs font-semibold text-gray-500 uppercase tracking-wider">Colegio Bilingüe</span>
+                </div>
+            </div>
+
+            <!-- Menú Desktop -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="../index.html" class="text-primary hover:text-secondary transition">Inicio</a>
+                <a href="./nosotros.html" class="text-gray-600 hover:text-secondary transition">Nosotros</a>
+                <a href="./servicios.html" class="text-gray-600 hover:text-secondary transition">Servicios</a>
+                <a href="./niveles.html" class="text-gray-600 hover:text-secondary transition">Niveles</a>
+                <a href="./contacto.html" class="text-gray-600 hover:text-secondary transition">Contacto</a>
+                <a href="./matriculas.html" class="text-gray-600 hover:text-secondary transition">Matrículas</a>
+            </nav>
+
+            <!-- Botón Admisión CTA -->
+            <div class="hidden md:block">
+                <a href="#contacto" class="bg-secondary hover:bg-amber-600 text-white font-semibold px-5 py-2.5 rounded-lg shadow-md transition duration-300">
+                    Admisión 2026
+                </a>
+            </div>
+
+            <!-- Botón menú móvil (Hambuerguesa) -->
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menú Móvil Desplegable -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-2">
+            <a href="../index.html" class="block py-2 text-primary font-medium">Inicio</a>
+            <a href="./nosotros.html" class="block py-2 text-gray-600 font-medium">Nosotros</a>
+            <a href="./servicios.html" class="block py-2 text-gray-600 font-medium">Servicios</a>
+            <a href="./niveles.html" class="block py-2 text-gray-600 font-medium">Niveles</a>
+            <a href="./contacto.html" class="block py-2 text-gray-600 font-medium">Contacto</a>
+            <a href="./matriculas.html" class="block text-center bg-secondary text-white font-semibold py-2.5 rounded-lg mt-2">Admisión 2026</a>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO (PRINCIPAL) -->
+    <section id="inicio" class="relative bg-primary text-white overflow-hidden py-24 lg:py-32">
+        <!-- Imagen de fondo con opacidad -->
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1600" alt="Estudiantes en el colegio" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="bg-secondary/20 text-secondary border border-secondary/30 text-xs font-bold uppercase tracking-widest py-1.5 px-3 rounded-full">
+                    Educación de Vanguardia
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                    Formando líderes para un <span class="text-secondary">futuro brillante</span>.
+                </h1>
+                <p class="text-lg text-gray-200 max-w-xl">
+                    Brindamos una formación académica integral, bilingüe y en valores, potenciando las capacidades únicas de cada estudiante en un entorno seguro y moderno.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#contacto" class="bg-secondary hover:bg-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg text-center transition duration-300">
+                        ¡Reserva una Visita!
+                    </a>
+                    <a href="#servicios" class="border-2 border-white hover:bg-white hover:text-primary text-white font-bold px-8 py-4 rounded-xl text-center transition duration-300">
+                        Conoce nuestros servicios
+                    </a>
+                </div>
+            </div>
+            <!-- Tarjeta visual con imagen destacada -->
+            <div class="relative hidden lg:block">
+                <div class="relative mx-auto w-80 h-96 lg:w-96 lg:h-[450px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=800" alt="Colegio moderno" class="w-full h-full object-cover">
+                </div>
+                <!-- Badge flotante -->
+                <div class="absolute bottom-6 -left-6 bg-white text-gray-900 p-4 rounded-xl shadow-xl flex items-center space-x-3">
+                    <div class="bg-secondary text-white p-3 rounded-lg text-xl">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 font-semibold uppercase">Calidad Certificada</p>
+                        <p class="text-base font-bold">+25 Años de Excelencia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold text-secondary uppercase tracking-widest">Sobre Nuestra Institución</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-primary">Un espacio ideal para aprender, crecer y trascender</h3>
+                <p class="text-gray-600">Nuestro enfoque combina la exigencia académica internacional con el desarrollo emocional y tecnológico.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-accent p-8 rounded-2xl border border-blue-100 text-center hover:-translate-y-1.5 transition duration-300">
+                    <div class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-md">
+                        <i class="fa-solid fa-bullseye text-secondary"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Misión</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Desarrollar competencias globales y pensamiento crítico en nuestros alumnos, guiándolos con valores sólidos y compromiso social.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-accent p-8 rounded-2xl border border-blue-100 text-center hover:-translate-y-1.5 transition duration-300">
+                    <div class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-md">
+                        <i class="fa-solid fa-eye text-secondary"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Visión</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Ser reconocidos como una institución educativa líder en innovación pedagógica, tecnología y alto rendimiento académico a nivel nacional.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-accent p-8 rounded-2xl border border-blue-100 text-center hover:-translate-y-1.5 transition duration-300">
+                    <div class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-md">
+                        <i class="fa-solid fa-handshake-angle text-secondary"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Valores</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Integridad, empatía, resiliencia, respeto y excelencia guían cada una de nuestras actividades diarias dentro y fuera del aula.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS / OFERTA INSTITUCIONAL (CON IMÁGENES) -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold text-secondary uppercase tracking-widest">Nuestros Servicios Educativos</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-primary">Todo lo que tu hijo necesita para destacar</h3>
+                <p class="text-gray-600">Contamos con infraestructura moderna y servicios complementarios de primer nivel.</p>
+            </div>
+
+            <!-- Grid de Servicios con Imágenes -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Servicio 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600" alt="Programa Bilingüe" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Académico</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-primary mb-2">Programa Bilingüe Intensivo</h4>
+                            <p class="text-gray-600 text-sm mb-4">Inmersión en el idioma inglés con certificaciones internacionales avaladas por instituciones de prestigio global.</p>
+                        </div>
+                        <a href="#contacto" class="text-secondary font-bold text-sm inline-flex items-center hover:underline">
+                            Más información <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&q=80&w=600" alt="Tecnología y Robótica" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Innovación</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-primary mb-2">Laboratorio de Robótica y STEM</h4>
+                            <p class="text-gray-600 text-sm mb-4">Espacios equipados con tecnología de punta para potenciar el razonamiento lógico, programación y ciencias.</p>
+                        </div>
+                        <a href="#contacto" class="text-secondary font-bold text-sm inline-flex items-center hover:underline">
+                            Más información <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?auto=format&fit=crop&q=80&w=600" alt="Deportes y Arte" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Extracurricular</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-primary mb-2">Academia de Deportes y Artes</h4>
+                            <p class="text-gray-600 text-sm mb-4">Fútbol, básquet, natación, música y teatro orientados a desarrollar disciplina, trabajo en equipo y expresión artística.</p>
+                        </div>
+                        <a href="#contacto" class="text-secondary font-bold text-sm inline-flex items-center hover:underline">
+                            Más información <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=600" alt="Psicopedagogía" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Bienestar</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-primary mb-2">Departamento Psicopedagógico</h4>
+                            <p class="text-gray-600 text-sm mb-4">Acompañamiento emocional permanente, orientación vocacional y soporte personalizado para el alumno y su familia.</p>
+                        </div>
+                        <a href="#contacto" class="text-secondary font-bold text-sm inline-flex items-center hover:underline">
+                            Más información <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=600" alt="Biblioteca y Sala de Estudio" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Infraestructura</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-primary mb-2">Biblioteca Digital y Física</h4>
+                            <p class="text-gray-600 text-sm mb-4">Amplios espacios de lectura y recursos virtuales de investigación disponibles las 24 horas para la comunidad escolar.</p>
+                        </div>
+                        <a href="#contacto" class="text-secondary font-bold text-sm inline-flex items-center hover:underline">
+                            Más información <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=600" alt="Comedor y Tópico" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Seguridad</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify
